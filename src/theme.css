@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Deed Plot — design tokens
+   --------------------------------------------------------------------------
+   Palette and type derived from the Investors Title corporate system
+   (invtitle.com theme CSS): brand teal #007377 on deep petrol #003d4c, a warm
+   grey neutral ramp, and a three-colour semantic set with pale tints. Square
+   corners (2-3px), almost no shadow, serif display over a grotesque sans.
+
+   Taken as direction, not as a skin: the layout, the severity language and the
+   data-table treatment below are this application's own.
+   ========================================================================== */
+
+:root {
+  /* --- brand ------------------------------------------------------------ */
+  --brand: #007377;            /* primary teal: h1, links, filled buttons   */
+  --brand-dark: #005c5f;       /* hover state, derived                      */
+  --brand-deep: #003d4c;       /* deep petrol: subheads, table heads, rules */
+  --brand-tint: #e8f1f1;       /* solid pale teal for chips and active nav  */
+  --brand-wash: rgba(0, 115, 119, 0.06);
+  --brand-rule: rgba(0, 115, 119, 0.22);
+
+  /* --- neutrals --------------------------------------------------------- */
+  --ground: #f5f5f5;
+  --surface: #ffffff;
+  --surface-alt: #eeeeee;
+  --line: #e0e0e0;
+  --line-soft: #ededed;
+  --ink: #263238;
+  --ink-mid: #575c60;
+  --ink-soft: #757575;
+  --ink-faint: #bdbdbd;
+
+  /* --- semantic: kept separate from the brand hue ----------------------- */
+  --high: #a51b00;             /* must resolve                              */
+  --high-line: #f9c9bf;
+  --high-bg: #fcf4f2;
+  --medium: #8a5a00;           /* should check                              */
+  --medium-line: #f4daa6;
+  --medium-bg: #fdf8ed;
+  --info: #46702e;             /* noted / clean                             */
+  --info-line: #c9e1bd;
+  --info-bg: #f3faef;
+
+  /* Back-compat aliases: earlier rules reference these names. */
+  --accent: var(--brand);
+  --accent-soft: var(--brand-tint);
+
+  /* --- type ------------------------------------------------------------- */
+  --display: "Source Serif 4", Georgia, "Times New Roman", Times, serif;
+  --sans: "Libre Franklin", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+  /* --- geometry --------------------------------------------------------- */
+  --r-sm: 2px;                 /* controls: their button radius             */
+  --r-md: 3px;                 /* panels                                    */
+  --shadow-card: 0 2px 5px 0 rgba(0, 0, 0, 0.04);
+
+  color-scheme: light;
+}
